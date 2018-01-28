@@ -1,93 +1,74 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Elastic Beanstalk</title>
-    <style>
-      body {
-        color: #ffffff;
-        font-family: Arial, sans-serif;
-        font-size:14px;
-        -moz-transition-property: text-shadow;
-        -moz-transition-duration: 4s;
-        -webkit-transition-property: text-shadow;
-        -webkit-transition-duration: 4s;
-        text-shadow: none;
-      }
-      body.blurry {
-        -moz-transition-property: text-shadow;
-        -moz-transition-duration: 4s;
-        -webkit-transition-property: text-shadow;
-        -webkit-transition-duration: 4s;
-        text-shadow: #fff 0px 0px 25px;
-      }
-      a {
-        color: #55aaff;
-      }
-      .textColumn, .linksColumn {
-        padding: 2em;
-      }
-      .textColumn {
-        position: absolute;
-        top: 0px;
-        right: 50%;
-        bottom: 0px;
-        left: 0px;
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
 
-        text-align: right;
-        padding-top: 11em;
-        background-color: #73A53E;
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div id="left">
+            <span><a href="#">Brand</a></span>
+            <span><a href="#">Browse</a></span>
+        </div>
+        <div id="right">
+            <span><a href="#">Sign Up</a></span>
+            <span><a href="#">Log In</a></span>
+            <span><a href="#">Help</a></span>
+        </div>
+    </nav>
+    <div style="clear: left"></div>
 
-      }
-      .textColumn p {
-        width: 75%;
-        float:right;
-      }
-      .linksColumn {
-        position: absolute;
-        top:0px;
-        right: 0px;
-        bottom: 0px;
-        left: 50%;
-
-        background-color: #33342D;
-      }
-
-      h1 {
-        color: #33342D;
-        font-size: 500%;
-        font-weight: normal;
-        margin-bottom: 0em;
-      }
-      h2 {
-        font-size: 200%;
-        font-weight: normal;
-        margin-bottom: 0em;
-      }
-      ul {
-        padding-left: 1em;
-        margin: 0px;
-      }
-      li {
-        margin: 1em 0em;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="textColumn">
-      <h1>Congratulations</h1>
-      <p>Your first AWS Elastic Beanstalk Node.js application is now running on your own dedicated environment in the AWS Cloud</p>
+    <div id="banner">
+        <div id="banner-title">   
+            <h1>Find a place to stay</h1>
+            <p>Rent from people in over 34,000 cities and 192 countries.</p>
+        </div>
     </div>
-    <div class="linksColumn">
-      <h2>What's Next?</h2>
-      <ul>
-        <li><a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html">AWS Elastic Beanstalk overview</a></li>
-        <li><a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts.html">AWS Elastic Beanstalk concepts</a></li>
-        <li><a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_nodejs_express.html">Deploy an Express Application to AWS Elastic Beanstalk</a></li>
-        <li><a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_nodejs_express_elasticache.html">Deploy an Express Application with Amazon ElastiCache to AWS Elastic Beanstalk</a></li>
-        <li><a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_nodejs_geddy_elasticache.html">Deploy a Geddy Application with Amazon ElastiCache to AWS Elastic Beanstalk </a></li>
-        <li><a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_nodejs_custom_container.html">Customizing and Configuring a Node.js Container </a></li>
-        <li><a href="http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features.loggingS3.title.html">Working with Logs</a></li>
-      </ul>
+
+    <div id="wrapper-content">
+        <h2>Neighborhood Guides</h2>
+        <p>Not sure where to stay? We've created neighborhood guides for cities all around the world.</p>
+        
+        <div class="flex-container">
+            <div class="flex-item">
+                <img src="https://s3.amazonaws.com/codecademy-content/courses/ltp/img/mexico-city.png" alt="">
+                <img src="https://s3.amazonaws.com/codecademy-content/courses/ltp/img/ny.png" alt="">
+            </div>
+            <div class="flex-item">
+                <img src="https://s3.amazonaws.com/codecademy-content/courses/ltp/img/tokyo.png" alt="">
+                <img src="https://s3.amazonaws.com/codecademy-content/courses/ltp/img/paris.png" alt="">
+            </div>
+            <div class="flex-item" id="last-flex">
+                <img src="https://s3.amazonaws.com/codecademy-content/courses/ltp/img/invite.png" alt="">
+            </div>
+        </div>
     </div>
-  </body>
+
+    
+
+    <footer>
+        <div class="flex-container">
+            <div class="flex-item">
+                <h4>Travel</h3>
+                <p>From apartments and rooms to treehouses and boats: stay in unique spaces in 192 countries.</p>
+                <a href="#">See how to travel on Airbnb</a>
+            </div>
+            <div class="flex-item">
+                <h4>Host</h3>
+                <p>Renting out your unused space could pay your bills or fund your next vacation.</p>
+                <a href="#">Learn more about hosting</a>    
+            </div>
+            <div class="flex-item">
+                <h4>Trust and Safety</h3>
+                <p>From Verified ID to our worldwide customer support team, we've got your back.</p>
+                <a href="#">Learn about trust at Airbnb</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
 </html>
